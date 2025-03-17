@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<actor version="1">
+
+
+
+  <castshadow/>
+
+
+
+  <group>
+
+
+
+    <variant name="base" frequency="1">
+
+
+
+      <textures>
+
+
+
+        <texture file="structural/hele_struct_b.png" name="baseTex"/>
+
+
+
+        <texture file="structural/hele_struct_b_norm.png" name="normTex"/>
+
+
+
+        <texture file="structural/hele_struct_b_spec.png" name="specTex"/>
+
+
+
+      </textures>
+
+
+
+    </variant>
+
+
+
+  </group>
+
+
+
+  <group>
+
+
+
+    <variant frequency="3" name="Hellenes House A">
+
+
+
+<mesh>structural/house.dae</mesh>
+      <props>
+
+
+
+      </props>
+
+
+
+      <textures>
+
+
+
+        <texture file="structural/ao/hele_house_a.png" name="aoTex"/>
+
+
+
+      </textures>
+
+
+
+    </variant>
+
+
+
+  </group>
+
+
+
+  <group>
+
+
+
+    <variant name="alive" frequency="1"/>
+
+
+
+    <variant file="structures/destruction_small.xml"/>
+
+
+
+  </group>
+
+
+
+  <material>no_trans_ao_parallax_spec.xml</material>
+
+
+
+</actor>
+
+
+

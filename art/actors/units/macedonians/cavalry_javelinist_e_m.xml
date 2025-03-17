@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant>
+      <mesh>skeletal/horse_tessalian.dae</mesh>
+      <props>
+        <prop actor="units/athenians/cavalry_javelinist_e_r.xml" attachpoint="rider"/>
+      </props>
+      <textures>
+        <texture file="skeletal/horse_halflinger.png" name="baseTex"/>
+      </textures>
+
+    </variant>
+  </group>
+
+  <group>
+    <variant file="quadraped/horse/halflinger.xml" name="Horse-Trot"/>
+    <variant file="quadraped/base_horse_death.xml"/>
+    <variant file="quadraped/base_horse_run.xml"/>
+    <variant file="quadraped/base_horse_gather_meat.xml" name="gather_meat"/>
+  </group>
+  <material>no_trans_parallax_spec.xml</material>
+</actor>

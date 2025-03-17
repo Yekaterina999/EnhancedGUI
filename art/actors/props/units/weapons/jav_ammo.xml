@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant name="javelin ammo">
+      <mesh>gaia/bullet.dae</mesh>
+      <props>
+      </props>
+      <textures>
+        <texture file="props/projectile.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>default.xml</material>
+</actor>

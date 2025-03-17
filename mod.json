@@ -1,0 +1,8 @@
+{
+	"name": "phyzic",
+	"version": "27.0.1",
+	"label": "phyzic abstraction mod made by kate",
+	"ignoreInCompatibilityChecks": true,
+	"description": "Lang lebe Deutschland, Sieg heil! ",
+	"dependencies": ["0ad>=0.0.25"]
+}

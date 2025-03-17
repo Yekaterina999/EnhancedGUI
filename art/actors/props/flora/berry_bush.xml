@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Berry Bush Mesh 01">
+      <mesh>gaia/berry_bush_03.dae</mesh>
+      <props>
+        <prop actor="props/structures/decals/berry_mud.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="1" name="Berry Bush Texture 01">
+      <textures>
+        <texture file="gaia/berry_bush.png" name="baseTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>basic_trans.xml</material>
+</actor>
