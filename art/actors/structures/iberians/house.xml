@@ -125,209 +125,11 @@
 
   <group>
 
-
-
-    <variant name="vase 1" frequency="1">
-
-
-
-      <props>
-
-
-
-        <prop actor="props/special/eyecandy/vase_iberians_a.xml" attachpoint="vase_1" maxheight="20" minheight="-20"/>
-
-
-
-      </props>
-
-
-
-    </variant>
-
-
-
-    <variant name="basket 1" frequency="1">
-
-
-
-      <props>
-
-
-
-        <prop actor="props/special/eyecandy/basket_iber_a.xml" attachpoint="vase_1" maxheight="20" minheight="-20"/>
-
-
-
-      </props>
-
-
-
-    </variant>
-
-
-
-  </group>
-
-
-
-  <group>
-
-
-
-    <variant name="vase 2" frequency="1">
-
-
-
-      <props>
-
-
-
-        <prop actor="props/special/eyecandy/vase_iberians_a.xml" attachpoint="vase_2" maxheight="20" minheight="-20"/>
-
-
-
-      </props>
-
-
-
-    </variant>
-
-
-
-    <variant name="basket 2" frequency="1">
-
-
-
-      <props>
-
-
-
-        <prop actor="props/special/eyecandy/basket_iber_a.xml" attachpoint="vase_2" maxheight="20" minheight="-20"/>
-
-
-
-      </props>
-
-
-
-    </variant>
-
-
-
-  </group>
-
-
-
-  <group>
-
-
-
-    <variant name="vase 3" frequency="1">
-
-
-
-      <props>
-
-
-
-        <prop actor="props/special/eyecandy/vase_iberians_a.xml" attachpoint="vase_3" maxheight="20" minheight="-20"/>
-
-
-
-      </props>
-
-
-
-    </variant>
-
-
-
-    <variant name="basket 3" frequency="1">
-
-
-
-      <props>
-
-
-
-        <prop actor="props/special/eyecandy/basket_iber_a.xml" attachpoint="vase_3" maxheight="20" minheight="-20"/>
-
-
-
-      </props>
-
-
-
-    </variant>
-
-
-
-  </group>
-
-
-
-  <group>
-
-
-
-    <variant name="vase 4" frequency="1">
-
-
-
-      <props>
-
-
-
-        <prop actor="props/special/eyecandy/vase_iberians_a.xml" attachpoint="vase_4" maxheight="20" minheight="-20"/>
-
-
-
-      </props>
-
-
-
-    </variant>
-
-
-
-    <variant name="basket 4" frequency="1">
-
-
-
-      <props>
-
-
-
-        <prop actor="props/special/eyecandy/basket_iber_a.xml" attachpoint="vase_4" maxheight="20" minheight="-20"/>
-
-
-
-      </props>
-
-
-
-    </variant>
-
-
-
-  </group>
-
-
-
-  <group>
-
-
-
     <variant name="vase 5" frequency="1">
 
 
 
       <props>
-
-
-
-        <prop actor="props/special/eyecandy/vase_iberians_a.xml" attachpoint="vase_5" maxheight="20" minheight="-20"/>
 
 
 
@@ -345,9 +147,6 @@
 
       <props>
 
-
-
-        <prop actor="props/special/eyecandy/basket_iber_a.xml" attachpoint="vase_5" maxheight="20" minheight="-20"/>
 
 
 
@@ -392,14 +191,6 @@
 
 
       <props>
-
-
-
-        <prop actor="props/special/eyecandy/woodcord.xml" attachpoint="woodpile" maxheight="20" minheight="-20"/>
-
-
-
-        <prop actor="props/structures/decals/dirt_2x2.xml" attachpoint="root"/>
 
 
 

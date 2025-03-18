@@ -22,26 +22,6 @@
 
 
 
-        <prop actor="props/structures/gauls/storehouse_barrel_a.xml" attachpoint="barrel_a" maxheight="20" minheight="-20"/>
-
-
-
-        <prop actor="props/structures/gauls/storehouse_barrel_b.xml" attachpoint="barrel_b" maxheight="20" minheight="-20"/>
-
-
-
-        <prop actor="props/structures/gauls/storehouse_ore.xml" attachpoint="root"/>
-
-
-
-        <prop actor="props/structures/gauls/storehouse_foliage.xml" attachpoint="root"/>
-
-
-
-        <prop actor="props/structures/decals/celt_tavern.xml" attachpoint="root"/>
-
-
-
       </props>
 
 

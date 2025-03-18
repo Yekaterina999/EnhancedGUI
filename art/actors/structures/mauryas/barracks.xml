@@ -11,22 +11,6 @@
 <mesh>structural/barrack.dae</mesh>
       <props>
 
-        <prop actor="props/structures/decals/dirt_4x4.xml" attachpoint="root"/>
-
-        <prop actor="props/structures/mauryas/barracks_a_struct_b.xml" attachpoint="root"/>
-
-        <prop actor="props/units/shields/maur_straight_a.xml" attachpoint="shieldentrance"/>
-
-        <prop actor="props/units/shields/maur_straight_a.xml" attachpoint="shieldentrance1"/>
-
-        <prop actor="props/units/shields/maur_straight_a.xml" attachpoint="shieldstraight"/>
-
-        <prop actor="props/units/shields/maur_small_a.xml" attachpoint="shieldback"/>
-
-        <prop actor="props/units/shields/maur_small_a.xml" attachpoint="shieldback1"/>
-
-        <prop actor="props/units/shields/maur_small_a.xml" attachpoint="shieldsmall"/>
-
       </props>
 
       <textures>
@@ -47,22 +31,6 @@
 
 <mesh>structural/barrack.dae</mesh>
       <props>
-
-        <prop actor="props/structures/decals/dirt_4x4.xml" attachpoint="root"/>
-
-        <prop actor="props/structures/mauryas/barracks_b_struct_b.xml" attachpoint="root"/>
-
-        <prop actor="props/units/shields/maur_straight_a.xml" attachpoint="shieldentrance"/>
-
-        <prop actor="props/units/shields/maur_straight_a.xml" attachpoint="shieldentrance1"/>
-
-        <prop actor="props/units/shields/maur_straight_a.xml" attachpoint="shieldstraight"/>
-
-        <prop actor="props/units/shields/maur_small_a.xml" attachpoint="shieldback"/>
-
-        <prop actor="props/units/shields/maur_small_a.xml" attachpoint="shieldback1"/>
-
-        <prop actor="props/units/shields/maur_small_a.xml" attachpoint="shieldsmall"/>
 
       </props>
 

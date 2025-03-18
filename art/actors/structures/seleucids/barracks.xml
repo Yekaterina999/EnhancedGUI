@@ -11,17 +11,6 @@
 <mesh>structural/barrack.dae</mesh>
       <props>
 
-        <prop actor="props/structures/decals/dirt_4x4.xml" attachpoint="root"/>
-
-        <prop actor="props/flora/bush.xml" attachpoint="bush"/>
-
-        <prop actor="props/flora/bush.xml" attachpoint="bush_1"/>
-
-        <prop actor="props/flora/bush.xml" attachpoint="bush_2"/>
-
-        <prop actor="props/flora/bush.xml" attachpoint="bush_3"/>
-
-        <prop actor="props/flora/bush.xml" attachpoint="bush_4"/>
 
       </props>
 

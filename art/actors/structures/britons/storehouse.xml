@@ -22,23 +22,6 @@
       <props>
 
 
-
-        <prop actor="props/structures/britons/storehouse_ore.xml" attachpoint="root"/>
-
-
-
-        <prop actor="props/structures/britons/storehouse_foliage.xml" attachpoint="root"/>
-
-
-
-        <prop actor="props/structures/britons/storehouse_barrel_a.xml" attachpoint="barrel"/>
-
-
-
-        <prop actor="props/structures/decals/celt_tavern.xml" attachpoint="root"/>
-
-
-
       </props>
 
 
@@ -89,13 +72,6 @@
 
       <props>
 
-
-
-        <prop actor="props/structures/britons/storehouse_ore.xml" attachpoint="root"/>
-
-
-
-        <prop actor="props/structures/britons/storehouse_foliage.xml" attachpoint="root"/>
 
 
 
