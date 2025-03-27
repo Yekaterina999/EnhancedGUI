@@ -393,7 +393,7 @@ function startHost(playername, servername, port, password, loadSavedGame)
 	let customrating = "";
 
 	if (playername.includes("icci")){
-		customsuffix = "host";
+		customsuffix = "";
 	}
 
 	try
@@ -473,14 +473,18 @@ function startJoinFromLobby(playername, hostJID, password)
 
 	try
 	{
-		let customrating = "";
+		let customrating = "1311";
 		let customsuffix = "";
 
 		if (playername.includes("icci")) {
-			customrating = "1536";
-			customsuffix = "Yildiz";
+			customrating = g_UserRating;
+			customsuffix = "Tensor";
 		}
-		Engine.StartNetworkJoinLobby(playername + (g_UserRating ? " (" + g_UserRating + ") " + customsuffix: ""), hostJID, password);
+
+		if (playername.includes("zaliya")){
+			customrating = "1311";
+		}
+		Engine.StartNetworkJoinLobby(playername + (" (" + customrating + ") " + customsuffix), hostJID, password);
 	}
 	catch (e)
 	{

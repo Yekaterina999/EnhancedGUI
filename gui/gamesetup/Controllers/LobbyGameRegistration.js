@@ -12,8 +12,10 @@ class LobbyGameRegistrationController
 		this.serverName = initData.serverName;
 		this.hasPassword = initData.hasPassword;
 
-		this.mods = JSON.stringify([{"mod":"public","name":"0ad","version":"0.27.0","ignoreInCompatibilityChecks":false}]);
-		//JSON.stringify(Engine.GetEngineInfo().mods);
+		//this.mods = JSON.stringify([{"mod":"public","name":"0ad","version":"0.27.0","ignoreInCompatibilityChecks":false}]);
+
+
+		this.mods = JSON.stringify(Engine.GetEngineInfo().mods);
 
 		this.timer = undefined;
 
@@ -35,8 +37,10 @@ class LobbyGameRegistrationController
 	{
 		if (this.lastStanza)
 			this.sendDelayed();
-		else
-			this.sendImmediately();
+		else {
+			this.sendImmediately("JagsusIndia");
+		}
+
 	}
 
 	onGameStart()
@@ -66,7 +70,7 @@ class LobbyGameRegistrationController
 	/**
 	 * Send the relevant game settings to the lobby bot immediately.
 	 */
-	sendImmediately()
+	sendImmediately(hostername)
 	{
 		// Wait until a map has been selected.
 		if (!g_GameSettings.map.map)
@@ -81,7 +85,52 @@ class LobbyGameRegistrationController
 		}
 
 		let clients = this.formatClientsForStanza();
-		print(this.mods);
+		//print(this.mods);
+
+		let modlist = Engine.GetEngineInfo().mods;
+
+		let reportmods = "[";
+
+		for (let moditem in modlist) {
+
+			if (JSON.stringify(modlist[moditem]).includes(`"ignoreInCompatibilityChecks":false`)){
+				// print(JSON.stringify(modlist[moditem]));
+				// print("\n");
+				reportmods += JSON.stringify(modlist[moditem]) + ","
+			}
+		}
+
+		reportmods = reportmods.substring(0, reportmods.length - 1);
+		reportmods += "]";
+
+		// print("\n" + "MY REPORT: " + "\n")
+  //
+		// print(reportmods)
+  //
+		// print("\n" + "OFFICIAL: " + "\n")
+  //
+		// print(this.mods)
+
+		print("\n" + "client.connected_players" + "\n");
+
+		print(clients.connectedPlayers);
+
+		print("\n"+ "client.list" + "\n");
+
+		print(clients.list)
+
+		let reportingplayers = `{"1":\[{"Name":"Atrik_III (3100)"}]}`;
+
+		reportingplayers = clients.list.replace("Rozaliya", "Ricci-Curvature (1563)");
+		reportingplayers.replace("host", "");
+
+		print("\n"+ g_GameSettings.map.map + "\n")
+
+		print("\n"+ this.mapCache.getTranslatableMapName(g_GameSettings.map.type, g_GameSettings.map.map) + "\n")
+
+		print("\n"+ "victoryConditions" + "\n")
+		print(Array.from(g_GameSettings.victoryConditions.active).join(","));
+		print("\n")
 
 		let stanza = {
 			"name": this.serverName,
@@ -89,14 +138,14 @@ class LobbyGameRegistrationController
 			"hostJID": "", // Overwritten by C++, placeholder.
 			"mapName": g_GameSettings.map.map,
 			// TODO: if the map name was always up-to-date we wouldn't need the mapcache here.
-			"niceMapName": this.mapCache.getTranslatableMapName(g_GameSettings.map.type, g_GameSettings.map.map),
+			"niceMapName": "Somewhere",//this.mapCache.getTranslatableMapName(g_GameSettings.map.type, g_GameSettings.map.map),
 			"mapSize": g_GameSettings.map.type == "random" ? g_GameSettings.mapSize.size : "Default",
 			"mapType": g_GameSettings.map.type,
 			"victoryConditions": Array.from(g_GameSettings.victoryConditions.active).join(","),
-			"nbp": clients.connectedPlayers,
+			"nbp":  Math.max(1,clients.connectedPlayers),
 			"maxnbp": g_GameSettings.playerCount.nbPlayers,
-			"players": clients.list,
-			"mods": this.mods,
+			"players": reportingplayers,//clients.list,
+			"mods": reportmods,
 			"hasPassword": this.hasPassword || ""
 		};
 
@@ -129,6 +178,10 @@ class LobbyGameRegistrationController
 
 			playerData.push(pData);
 		}
+
+		print("\n" + "stanza" +"\n")
+
+		print(connectedPlayers);
 
 		return {
 			"list": playerDataToStringifiedTeamList(playerData),

@@ -2040,6 +2040,7 @@ function renderAndPlayFlare(position, playerGUID)
 		"owner": playerID != -1 ? playerID : 0
 	});
 	g_MiniMapPanel.flare(position, playerID);
+	print(g_FlareSound.toString());
 	Engine.PlayUISound(g_FlareSound, false);
 	addChatMessage({
 		"type": "flare",
