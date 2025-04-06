@@ -2,16 +2,48 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant file="quadraped/base_bovidae_wild.xml" name="Base">
-      <mesh>skeletal/wildebeest_adult.dae</mesh>
+    <variant frequency="100" name="Mesh">
+      <animations>
+        <animation file="quadraped/lion_walk.dae" name="Walk" speed="80"/>
+        <animation file="quadraped/lion_run.dae" name="Run" speed="20"/>
+        <animation file="quadraped/lion_idle_01.dae" name="Idle" speed="50"/>
+        <animation file="quadraped/lion_idle_02.dae" name="Idle" speed="50"/>
+        <animation file="quadraped/lion_idle_03.dae" name="Idle" speed="50"/>
+        <animation event="0.1" file="quadraped/lion_idle_01.dae" name="attack_melee" speed="40"/>
+        <animation file="quadraped/lion_death.dae" name="Death" speed="80"/>
+      </animations>
+      <mesh>skeletal/animal_lion.dae</mesh>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="texture">
       <textures>
-        <texture file="skeletal/animal_wildebeest.dds" name="baseTex"/>
+        <texture file="props/garrison_celt_1.png" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
       </textures>
     </variant>
   </group>
   <group>
-    <variant frequency="100" name="Idle"/>
-    <variant file="quadraped/base_bovidae_death.xml" name="death"/>
+    <variant frequency="100" name="normal"/>
+    <variant frequency="0" name="feeding">
+      <animations>
+        <animation file="quadraped/lion_walk.dae" name="Walk" speed="80"/>
+        <animation file="quadraped/lion_run.dae" name="Run" speed="20"/>
+        <animation file="quadraped/lion_idle_01.dae" name="Idle" speed="50"/>
+        <animation file="quadraped/lion_idle_02.dae" name="Idle" speed="50"/>
+        <animation file="quadraped/lion_idle_03.dae" name="Idle" speed="50"/>
+        <animation file="quadraped/lion_death.dae" name="Death" speed="60"/>
+      </animations>
+    </variant>
   </group>
-  <material>default.xml</material>
+  <group>
+    <variant frequency="100" name="Idle"/>
+    <variant name="death">
+      <props>
+        <prop actor="props/units/blood_01.xml" attachpoint="root"/>
+      </props>
+    </variant>
+  </group>
+  <material>player_trans.xml</material>
 </actor>

@@ -138,7 +138,7 @@ class LobbyGameRegistrationController
 			"hostJID": "", // Overwritten by C++, placeholder.
 			"mapName": g_GameSettings.map.map,
 			// TODO: if the map name was always up-to-date we wouldn't need the mapcache here.
-			"niceMapName": "Somewhere",//this.mapCache.getTranslatableMapName(g_GameSettings.map.type, g_GameSettings.map.map),
+			"niceMapName": this.mapCache.getTranslatableMapName(g_GameSettings.map.type, g_GameSettings.map.map),
 			"mapSize": g_GameSettings.map.type == "random" ? g_GameSettings.mapSize.size : "Default",
 			"mapType": g_GameSettings.map.type,
 			"victoryConditions": Array.from(g_GameSettings.victoryConditions.active).join(","),

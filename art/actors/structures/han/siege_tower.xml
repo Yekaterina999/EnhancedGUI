@@ -15,11 +15,6 @@
         <texture file="default_norm.png" name="normTex"/>
         <texture file="null_black.dds" name="specTex"/>
       </textures>
-      <animations>
-        <animation file="mechanical/han_siege_tower_idle.dae" name="idle" speed="100"/>
-        <animation file="mechanical/han_siege_tower_walk.dae" name="walk" speed="15"/>
-        <animation file="mechanical/han_siege_tower_walk.dae" name="run" speed="24"/>
-      </animations>
     </variant>
   </group>
   <group>
@@ -27,6 +22,8 @@
     <variant name="garrisoned">
       <props>
         <prop actor="props/special/common/garrison_flag_han.xml" attachpoint="garrisoned"/>
+         <prop actor="props/units/weapons/bolt_tower.xml" attachpoint="projectile"/>
+         <prop actor="props/units/weapons/bolt_tower.xml" attachpoint="loaded-projectile"/>
       </props>
     </variant>
     <variant name="death">

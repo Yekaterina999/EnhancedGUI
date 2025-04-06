@@ -473,17 +473,24 @@ function startJoinFromLobby(playername, hostJID, password)
 
 	try
 	{
-		let customrating = "1311";
+		let customrating = "";
 		let customsuffix = "";
 
 		if (playername.includes("icci")) {
 			customrating = g_UserRating;
-			customsuffix = "Tensor";
+			customsuffix = "+++";
 		}
 
 		if (playername.includes("zaliya")){
 			customrating = "1311";
 		}
+		if (playername.includes("Suundenjaager")){
+			customrating = "1454";
+		}
+		if (playername.includes("Astra")){
+			customrating = "1550";
+		}
+
 		Engine.StartNetworkJoinLobby(playername + (" (" + customrating + ") " + customsuffix), hostJID, password);
 	}
 	catch (e)

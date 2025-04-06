@@ -12,6 +12,7 @@
         <texture file="props/projectile.png" name="baseTex"/>
       </textures>
     </variant>
+  </group>
   <group>
     <variant>
       <textures>
