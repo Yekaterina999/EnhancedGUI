@@ -4,7 +4,7 @@
   <group>
     <variant>
       <mesh>gaia/berry_bush_03.dae</mesh>
-      <textures><texture file="gaia/berry_bush_01.png" name="baseTex"/></textures>
+      <textures><texture file="gaia/berry_bush.png" name="baseTex"/></textures>
     </variant>
   </group>
   <material>basic_trans.xml</material>

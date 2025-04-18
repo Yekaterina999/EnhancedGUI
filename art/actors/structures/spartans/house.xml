@@ -14,55 +14,7 @@
 
 
 
-    <variant frequency="1" name="Spartan House">
-
-
-
-      <props>
-
-
-
-        <prop actor="props/structures/decals/spart_3x3.xml" attachpoint="root"/>
-
-
-
-      </props>
-
-
-
-      <textures>
-
-
-
-        <texture file="structural/sparta_struct.png" name="baseTex"/>
-
-
-
-        <texture file="structural/sparta_struct_spec.png" name="specTex"/>
-
-
-
-        <texture file="structural/sparta_struct_norm.png" name="normTex"/>
-
-
-
-      </textures>
-
-
-
-    </variant>
-
-
-
-  </group>
-
-
-
-  <group>
-
-
-
-    <variant frequency="1" name="House 01">
+    <variant frequency="1" name="celt house a">
 
 
 
@@ -71,11 +23,81 @@
 
 
 
-        <prop actor="props/structures/spartans/house_nature.xml" attachpoint="root"/>
+        <prop actor="props/structures/celts/house_a_door.xml" attachpoint="root"/>
+
+
+
+        <prop actor="props/structures/celts/house_a_shields.xml" attachpoint="root"/>
 
 
 
       </props>
+
+
+
+    </variant>
+
+
+
+    <variant frequency="1" name="celt house b">
+
+
+
+<mesh>structural/house.dae</mesh>
+      <props>
+
+
+
+        <prop actor="props/structures/celts/house_b_shields.xml" attachpoint="root"/>
+
+
+
+        <prop actor="props/structures/celts/house_b_door.xml" attachpoint="root"/>
+
+
+
+      </props>
+
+
+
+    </variant>
+
+
+
+    <variant frequency="1" name="celt house c">
+
+
+
+<mesh>structural/house.dae</mesh>
+      <props>
+
+
+
+        <prop actor="props/structures/celts/house_c_shields.xml" attachpoint="root"/>
+
+
+
+        <prop actor="props/structures/celts/house_c_door.xml" attachpoint="root"/>
+
+
+
+      </props>
+
+
+
+    </variant>
+
+
+
+  </group>
+
+
+
+  <group>
+
+
+
+    <variant frequency="1" name="texture">
 
 
 
@@ -83,43 +105,19 @@
 
 
 
-        <texture file="structural/ao/spart_house_01.png" name="aoTex"/>
+	    <texture file="structural/celt_struct_1.dds" name="baseTex"/>
 
 
 
-      </textures>
+	    <texture file="structural/celt_struct_1_norm.png" name="normTex"/>
 
 
 
-    </variant>
+	    <texture file="structural/celt_struct_1_spec.png" name="specTex"/>
 
 
 
-  </group>
-
-
-
-  <group>
-
-
-
-    <variant frequency="1" name="ungarrisoned"/>
-
-
-
-    <variant name="garrisoned">
-
-
-
-      <props>
-
-
-
-        <prop actor="props/special/common/garrison_flag_hele.xml" attachpoint="garrisoned"/>
-
-
-
-      </props>
+	  </textures>
 
 
 
@@ -135,7 +133,7 @@
 
 
 
-    <variant frequency="1" name="alive"/>
+    <variant name="alive" frequency="1"/>
 
 
 
@@ -147,7 +145,7 @@
 
 
 
-  <material>player_trans_ao_parallax_spec.xml</material>
+  <material>player_trans_parallax_spec.xml</material>
 
 
 

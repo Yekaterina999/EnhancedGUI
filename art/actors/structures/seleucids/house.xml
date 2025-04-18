@@ -14,12 +14,20 @@
 
 
 
-    <variant frequency="1" name="Base">
+    <variant frequency="1" name="celt house a">
 
 
 
+<mesh>structural/house.dae</mesh>
       <props>
 
+
+
+        <prop actor="props/structures/celts/house_a_door.xml" attachpoint="root"/>
+
+
+
+        <prop actor="props/structures/celts/house_a_shields.xml" attachpoint="root"/>
 
 
 
@@ -27,23 +35,53 @@
 
 
 
-      <textures>
+    </variant>
 
 
 
-        <texture file="structural/Sele_struct_2.png" name="baseTex"/>
+    <variant frequency="1" name="celt house b">
 
 
 
-        <texture file="structural/Sele_struct_2_norm.png" name="normTex"/>
+<mesh>structural/house.dae</mesh>
+      <props>
 
 
 
-        <texture file="structural/Sele_struct_2_spec.png" name="specTex"/>
+        <prop actor="props/structures/celts/house_b_shields.xml" attachpoint="root"/>
 
 
 
-      </textures>
+        <prop actor="props/structures/celts/house_b_door.xml" attachpoint="root"/>
+
+
+
+      </props>
+
+
+
+    </variant>
+
+
+
+    <variant frequency="1" name="celt house c">
+
+
+
+<mesh>structural/house.dae</mesh>
+      <props>
+
+
+
+        <prop actor="props/structures/celts/house_c_shields.xml" attachpoint="root"/>
+
+
+
+        <prop actor="props/structures/celts/house_c_door.xml" attachpoint="root"/>
+
+
+
+      </props>
 
 
 
@@ -59,20 +97,27 @@
 
 
 
-    <variant frequency="1" name="aa">
+    <variant frequency="1" name="texture">
 
 
 
-<mesh>structural/house.dae</mesh>
       <textures>
 
 
 
-        <texture file="structural/ao/sele_house_a.png" name="aoTex"/>
+	    <texture file="structural/celt_struct_1.dds" name="baseTex"/>
 
 
 
-      </textures>
+	    <texture file="structural/celt_struct_1_norm.png" name="normTex"/>
+
+
+
+	    <texture file="structural/celt_struct_1_spec.png" name="specTex"/>
+
+
+
+	  </textures>
 
 
 
@@ -92,19 +137,7 @@
 
 
 
-    <variant file="structures/sele/light_damage.xml"/>
-
-
-
-    <variant file="structures/sele/medium_damage.xml"/>
-
-
-
-    <variant file="structures/sele/heavy_damage.xml"/>
-
-
-
-    <variant file="structures/sele/destruction_medium.xml"/>
+    <variant file="structures/destruction_small.xml"/>
 
 
 
@@ -112,7 +145,7 @@
 
 
 
-  <material>player_trans_ao_parallax_spec.xml</material>
+  <material>player_trans_parallax_spec.xml</material>
 
 
 

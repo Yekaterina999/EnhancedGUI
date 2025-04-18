@@ -6,7 +6,7 @@
 
   <group>
 
-    <variant frequency="1" name="Base">
+    <variant frequency="100" name="barracks">
 
 <mesh>structural/barrack.dae</mesh>
       <props>
@@ -17,15 +17,15 @@
 
       <textures>
 
-        <texture file="structural/kush_struct.png" name="baseTex"/>
+	    <texture file="structural/rome_struct_2.png" name="baseTex"/>
 
-        <texture file="structural/kush_struct_spec.png" name="specTex"/>
+	    <texture file="structural/rome_struct_2_norm.png" name="normTex"/>
 
-        <texture file="structural/kush_struct_norm.png" name="normTex"/>
+	    <texture file="structural/rome_struct_2_spec.png" name="specTex"/>
 
-        <texture file="structural/ao/kush_barracks.png" name="aoTex"/>
+	    <texture file="structural/ao/rome_barracks.png" name="aoTex"/>
 
-      </textures>
+	  </textures>
 
     </variant>
 
@@ -33,13 +33,13 @@
 
   <group>
 
-    <variant frequency="1" name="ungarrisoned"/>
+    <variant name="ungarrisoned" frequency="1"/>
 
     <variant name="garrisoned">
 
       <props>
 
-        <prop actor="props/special/common/garrison_flag_kush.xml" attachpoint="garrisoned"/>
+        <prop actor="props/special/common/garrison_flag_rome.xml" attachpoint="garrisoned"/>
 
       </props>
 
@@ -49,7 +49,7 @@
 
   <group>
 
-    <variant frequency="1" name="alive"/>
+    <variant name="alive" frequency="1"/>
 
     <variant file="structures/destruction_medium.xml"/>
 

@@ -91,80 +91,12 @@
 
 
 
-        <prop actor="props/structures/mauryas/house_a_struct_b.xml" attachpoint="root"/>
-
-
 
       </props>
 
 
 
     </variant>
-
-
-
-    <variant frequency="1" name="House B">
-
-
-
-<mesh>structural/house.dae</mesh>
-      <props>
-
-
-
-        <prop actor="props/structures/mauryas/house_b_struct_b.xml" attachpoint="root"/>
-
-
-
-      </props>
-
-
-
-    </variant>
-
-
-
-    <variant frequency="1" name="House C">
-
-
-
-<mesh>structural/house.dae</mesh>
-      <props>
-
-
-
-        <prop actor="props/structures/mauryas/house_c_struct_b.xml" attachpoint="root"/>
-
-
-
-      </props>
-
-
-
-    </variant>
-
-
-
-    <variant frequency="1" name="House D">
-
-
-
-<mesh>structural/house.dae</mesh>
-      <props>
-
-
-
-        <prop actor="props/structures/mauryas/house_d_struct_b.xml" attachpoint="root"/>
-
-
-
-      </props>
-
-
-
-    </variant>
-
-
 
   </group>
 
