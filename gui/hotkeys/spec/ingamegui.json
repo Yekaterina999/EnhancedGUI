@@ -23,6 +23,10 @@
 				"name": "Toggle chat",
 				"desc": "Toggle chat window."
 			},
+			"humanperspective.toggle": {
+				"name": "Human view",
+				"desc": "Return to the correct viewed player."
+			},
 			"teamchat": {
 				"name": "Toggle team chat",
 				"desc": "Toggle chat window in team chat mode."
@@ -70,6 +74,10 @@
 			"fps.toggle": {
 				"name": "Toggle FPS counter",
 				"desc": "Toggle “frames per second” counter."
+			},
+			"aiperspective.toggle": {
+				"name": "Toggle Map Perspective",
+				"desc": "Orphaned ability to reveal AI behaviour logic chain"
 			},
 			"realtime.toggle": {
 				"name": "Toggle real-time overlay",

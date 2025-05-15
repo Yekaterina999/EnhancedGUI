@@ -854,6 +854,7 @@ function handleInputAfterGui(ev)
 			break;
 
 		case "hotkeypress":
+
 			if (ev.hotkey.indexOf("selection.group.") == 0)
 			{
 				let now = Date.now();
