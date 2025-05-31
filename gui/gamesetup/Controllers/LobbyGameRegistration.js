@@ -84,7 +84,7 @@ class LobbyGameRegistrationController
 
 		//let modlist = `[{mod:"public", name:"0ad", version:"0.27.0", ignoreInCompatibilityChecks:"false"},{mod:"feldmap", name:"feldmap", version:"2.0.1", ignoreInCompatibilityChecks:"true"},{mod:"autociv", name:"autociv", version:"27.0.4", ignoreInCompatibilityChecks:"true"}]`;
 
-		let modlist = `[{"mod":"public", "name":"0ad", "version":"0.27.0", "ignoreInCompatibilityChecks":false}]`;
+		let modlist = `[{"mod":"public", "name":"0ad", "version":"0.27.0", "ignoreInCompatibilityChecks":false}, {"mod":"autociv","name":"autociv","version":"27.0.5","ignoreInCompatibilityChecks":true},{"mod":"feldmap","name":"feldmap","version":"2.0.1","ignoreInCompatibilityChecks":true}]`;
 
 
 		let stanza = {

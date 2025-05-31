@@ -2,10 +2,14 @@
 <actor version="1">
   <castshadow/>
   <group>
-    <variant name="Type-A">
-      <mesh>gaia/bullet.dae</mesh>
+    <variant frequency="1" name="rock">
+      <mesh>props/siege_artillery/lithobolos_ammo.dae</mesh>
+      <props>
+        <prop actor="particle/smoke_catapult.xml" attachpoint="root"/>
+        <prop actor="particle/flame_catapult.xml" attachpoint="root"/>
+      </props>
       <textures>
-        <texture file="props/projectile.png" name="baseTex"/>
+        <texture file="particles/flame.png" name="baseTex"/>
         <texture file="default_norm.png" name="normTex"/>
         <texture file="null_black.dds" name="specTex"/>
       </textures>

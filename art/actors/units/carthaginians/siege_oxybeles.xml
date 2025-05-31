@@ -18,7 +18,7 @@
         <prop actor="units/carthaginians/oxybeles_infantry_a.xml" attachpoint="operator_L"/>
         <prop actor="units/carthaginians/oxybeles_infantry_b.xml" attachpoint="operator_R"/>
         <prop actor="props/units/siege_artillery/bolt_front_med.xml" attachpoint="loaded-projectile"/>
-        <prop actor="props/units/siege_artillery/bolt_projectile_med.xml" attachpoint="projectile"/>
+        <prop actor="props/units/siege_artillery/laser.xml" attachpoint="projectile"/>
         <prop actor="props/units/siege_artillery/bolt_ammo_med.xml" attachpoint="ammo"/>
       </props>
     </variant>
