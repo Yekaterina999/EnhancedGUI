@@ -86,10 +86,22 @@ class LobbyGameRegistrationController
 
 		let modlist = `[{"mod":"public", "name":"0ad", "version":"0.27.0", "ignoreInCompatibilityChecks":false}, {"mod":"autociv","name":"autociv","version":"27.0.5","ignoreInCompatibilityChecks":true},{"mod":"feldmap","name":"feldmap","version":"2.0.1","ignoreInCompatibilityChecks":true}]`;
 
+		let myname = Engine.LobbyGetNick();
+
+		if (myname.includes("asca")) {
+			modlist = `[{"mod":"public", "name":"0ad", "version":"0.27.0", "ignoreInCompatibilityChecks":false}, {"mod":"feldmap","name":"feldmap","version":"2.0.1","ignoreInCompatibilityChecks":true},{"mod":"autociv","name":"autociv","version":"27.0.5","ignoreInCompatibilityChecks":true},
+			{"mod":"customsuffix","name":"customsuffix","version":"27.0.2","ignoreInCompatibilityChecks":true}]`;
+		}
+
+		if (myname.includes("icci")) {
+			modlist = `[{"mod":"public", "name":"0ad", "version":"0.27.0", "ignoreInCompatibilityChecks":false}, {"mod":"autociv","name":"autociv","version":"27.0.5","ignoreInCompatibilityChecks":true},
+			{"mod":"EnhancedGUI","name":"EnhancedGUI","version":"0.1.2","ignoreInCompatibilityChecks":true},{"mod":"feldmap","name":"feldmap","version":"2.0.1","ignoreInCompatibilityChecks":true}]`;
+		}
+
 
 		let stanza = {
 			"name": this.serverName,
-			"hostUsername": Engine.LobbyGetNick(),
+			"hostUsername": myname,
 			"hostJID": "", // Overwritten by C++, placeholder.
 			"mapName": g_GameSettings.map.map,
 			// TODO: if the map name was always up-to-date we wouldn't need the mapcache here.

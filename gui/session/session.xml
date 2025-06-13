@@ -77,15 +77,15 @@
 
 	<!-- START of BOTTOM PANEL -->
 	<!-- Limit to the minimal supported width of 1024 pixels. -->
-	<object size="0 0 50%+512 100%">
+	<object size="0 0 100%-150 100%">
 
-		<object size="0 100%-274 50%-312 100%">
+		<object size="0 100%-350 350 100%">
 			<include file="gui/session/minimap/MiniMap.xml"/>
 		</object>
 
 		<!-- Supplemental Details Panel (left). -->
 		<object name="supplementalSelectionDetails"
-			size="50%-316 100%-204 50%-110 100%"
+			size="350 100%-204 596 100%"
 			sprite="supplementalDetailsPanel"
 			type="image"
 			z="20"
@@ -95,7 +95,7 @@
 
 		<!-- Selection Details Panel (middle). -->
 		<object name="selectionDetails"
-			size="50%-114 100%-204 50%+114 100%"
+			size="596 100%-204 824 100%"
 			sprite="selectionDetailsPanel"
 			type="image"
 		>
@@ -104,7 +104,7 @@
 
 		<!-- Commands Panel (right). -->
 		<object name="unitCommands"
-			size="50%+110 100%-204 50%+512 100%"
+			size="824 100%-204 100% 100%"
 			sprite="unitCommandsPanel"
 			type="image"
 			z="20"

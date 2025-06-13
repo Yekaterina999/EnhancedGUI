@@ -6,9 +6,9 @@
 	<object name="unitSelectionPanel">
 		<object>
 			<repeat count="16">
-				<object name="unitSelectionButton[n]" hidden="true" style="iconButton" type="button" size="0 0 48 48" tooltip_style="sessionToolTipBold" z="100">
+				<object name="unitSelectionButton[n]" hidden="true" style="iconButton" type="button" size="0 0 38 38" tooltip_style="sessionToolTipBold" z="100">
 					<object name="unitSelectionSelection[n]" type="image" ghost="true"/>
-					<object name="unitSelectionIcon[n]" type="image" ghost="true" size="3 3 45 45"/>
+					<object name="unitSelectionIcon[n]" type="image" ghost="true" size="3 3 35 35"/>
 					<object name="unitSelectionCount[n]" ghost="true" style="groupIconsText" type="text"/>
 					<object size="0 100%-3 100% 100%" name="unitSelectionHealth[n]" ghost="true"/>
 				</object>

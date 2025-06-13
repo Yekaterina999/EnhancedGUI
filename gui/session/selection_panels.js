@@ -565,7 +565,13 @@ g_SelectionPanels.Queue = {
 			warning("Unknown production queue template " + uneval(queuedItem));
 			return false;
 		}
-		data.button.onPress = function() { removeFromProductionQueue(data.item.producingEnt, queuedItem.id); };
+		try {
+			data.button.onPress = function() { removeFromProductionQueue(data.item.producingEnt, queuedItem.id); };
+		}
+		catch (err) {
+			print(err.toString());
+		}
+
 
 		const tooltips = [getEntityNames(template)];
 		if (data.item.ghost)

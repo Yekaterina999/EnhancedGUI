@@ -4,9 +4,9 @@
 >
 	<object>
 		<repeat count="12">
-			<object name="unitGarrisonButton[n]" hidden="true" style="iconButton" type="button" size="0 0 48 48" tooltip_style="sessionToolTipBottomBold" z="100">
+			<object name="unitGarrisonButton[n]" hidden="true" style="iconButton" type="button" size="0 0 38 38" tooltip_style="sessionToolTipBottomBold" z="100">
 				<object name="unitGarrisonSelection[n]" type="image" ghost="true"/>
-				<object name="unitGarrisonIcon[n]" type="image" ghost="true" size="3 3 45 45"/>
+				<object name="unitGarrisonIcon[n]" type="image" ghost="true" size="3 3 35 35"/>
 				<object name="unitGarrisonCount[n]" ghost="true" style="groupIconsText" type="text"/>
 			</object>
 		</repeat>

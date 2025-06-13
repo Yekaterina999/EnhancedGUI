@@ -15,10 +15,7 @@
   </group>
   <group>
     <variant frequency="1" name="Round Mesh A">
-      <mesh>gaia/stonemine_round_a.dae</mesh>
-    </variant>
-    <variant frequency="1" name="Round Mesh B">
-      <mesh>gaia/stonemine_round_b.dae</mesh>
+      <mesh>gaia/metalmine.dae</mesh>
     </variant>
   </group>
   <material>no_trans_norm_spec.xml</material>
